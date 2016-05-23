@@ -1,0 +1,19 @@
+# Maven build directory
+target/
+
+# Log files
+*.log
+
+# IntelliJ files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse files
+.settings/
+.loadpath
+.project
+.classpath
+.factorypath
+
