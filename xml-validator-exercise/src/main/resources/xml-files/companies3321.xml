@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datasetConfig>
+    <name>companies3321</name>
+    <fields>
+        <field>
+            <id>54353</id>
+            <name>companyNameDisplay</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+            <isDeleted>false</isDeleted>
+        </field>
+        <field>
+            <id>3421</id>
+            <name>companyAncestorNames</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+        </field>
+        <field>
+            <id>543</id>
+            <name>companyDrugInactiveCount</name>
+            <isDeleted>true</isDeleted>
+        </field>
+        <field>
+            <id>43223</id>
+            <name>companyPatentFamilyOwner</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+        </field>
+        <field>
+            <id>662</id>
+            <name>companyOwner</name>
+            <isNew>true</isNew>
+        </field>
+        <field>
+            <id>577732</id>
+            <name>companyDealsCount</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+        </field>
+        <field>
+            <id>4321</id>
+            <name>teaser</name>
+            <isUpdate>true</isUpdate>
+        </field>
+    </fields>
+</datasetConfig>

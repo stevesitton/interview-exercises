@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datasetConfig>
+    <name>drugs232</name>
+    <fields>
+        <field>
+            <id>34</id>
+            <name>companyOriginator</name>
+            <isNew>true</isNew>
+        </field>
+        <field>
+            <id>6564</id>
+            <name>indicationsPrimary</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+            <isDeleted>false</isDeleted>
+        </field>
+    </fields>
+</datasetConfig>

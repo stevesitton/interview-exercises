@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datasetConfig>
+    <name>patents2099</name>
+    <fields>
+        <field>
+            <id>54</id>
+            <name>patentNameDisplay</name>
+            <isNew>false</isNew>
+            <isUpdate>true</isUpdate>
+            <isDeleted>false</isDeleted>
+        </field>
+        <field>
+            <id>71211</id>
+            <name>patentOriginalTitle</name>
+            <isUpdate>true</isUpdate>
+        </field>
+        <field>
+            <id>76575</id>
+            <name>teaser</name>
+            <isNew>true</isNew>
+        </field>
+        <field>
+            <id>5645645</id>
+            <isDeleted>true</isDeleted>
+        </field>
+    </fields>
+</datasetConfig>
