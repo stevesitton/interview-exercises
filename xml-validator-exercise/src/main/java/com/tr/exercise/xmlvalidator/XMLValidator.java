@@ -8,10 +8,10 @@ package com.tr.exercise.xmlvalidator;
  * =============
  *
  * The problem:
- * We have a directory that contains a number of XML files with important data that needs to be imported so the
- * update are available to our customers. However, we don't if these XML files are well formed.  We only want to
- * import valid files so we need to identify them.  The XML files and the XSD are in the resources/xml-files
- * directory.
+ * We have a directory that contains a number of XML files, each of which contain important data.  These files need
+ * to be imported so the updates are available to our customers. However, we don't know if these XML files are well
+ * formed.  To avoid problems with the load we only want to import valid data files.  The XML files and the XSD are
+ * in the resources/xml-files directory.
  *
  * The task:
  * Write a program to validate the XML files against the XSD and produce a log file that includes the names of any

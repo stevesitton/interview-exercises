@@ -3,7 +3,6 @@ package com.tr.exercise.peoplestats;
 import com.tr.exercise.peoplestats.domain.Person;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVRecord;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,6 +10,7 @@ import java.io.UncheckedIOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.StreamSupport;
 
 /**
  * This exercise is to primarily look at your development process, secondly your coding ability.  This is a 30 minute
@@ -53,7 +53,6 @@ public class PeopleStats {
             List<Person> people = getData();
 
 
-
         } catch (IOException io) {
             throw new UncheckedIOException(io);
         }
@@ -67,16 +66,12 @@ public class PeopleStats {
      */
     public static List<Person> getData() throws IOException {
 
-        String csvLocation = "people-stats-exercise/src/main/resources/people.csv";
-
         List<Person> people = new ArrayList<>();
-        File csvData = new File(csvLocation);
+        File csvData = new File("people-stats-exercise/src/main/resources/people.csv");
         CSVParser parser = CSVParser.parse(csvData, Charset.defaultCharset(), CSVFormat.RFC4180);
-        for (CSVRecord csvRecord : parser) {
-            people.add(new Person(csvRecord.get(0), csvRecord.get(1), csvRecord.get(2), csvRecord.get(3)));
-        }
-        return people;
+        StreamSupport.stream(parser.spliterator(), false).forEach(p -> people.add(new Person(p.get(0), p.get(1), p.get(2), p.get(3))));
 
+        return people;
     }
 
 }
